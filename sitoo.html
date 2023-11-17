@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+     <link rel="stylesheet" href="sitoo.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+      integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+    <title>Presentazione Schemi E/R</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="toggle_btn ">
+                <span></span>
+                <span></span>
+                <span></span>
+               <!-- <i class="ri-menu-line"></i>-->
+            </div>
+            <div class="profile_img">
+            </div>
+
+            <div class="username">Schemi</div>
+            <div class="links">
+                <ul>
+                    <li><a class="active" href="#E_A"><i
+                     class="ri-circle-fill">
+                    </i> Entita' Associazioni</a>
+                    </li>
+                    <li><a href="#A_R"><i
+                    class="ri-circle-fill">
+                    </i>Associazioni Ricorsiva </a>
+                    </li>
+                    <li><a href="#E_A_R"><i
+                     class="ri-circle-fill">
+                    </i>Entita' Associazioni Realta' </a>
+                    </li>
+                    <li><a href="#A_E"><i
+                     class="ri-circle-fill">
+                    </i>Attributi Entita'</a>
+                    </li>
+                    <li><a href="#A_E_R"><i
+                      class="ri-circle-fill">
+                    </i> Attributi Entita' Realta</a>
+                    </li>
+                    <li><a href="#M"><i
+                    class="ri-circle-fill">
+                    </i>Molteplicita' di una Associazione </a>
+                    </li>
+                    <li><a href="#A_D"><i
+                    class="ri-circle-fill">
+                    </i>Associazioni Diverse </a>
+                    </li>
+                    </li>
+                    <li><a href="#E/R"><i
+                    class="ri-circle-fill">
+                    </i> Schema E/R</a>
+                    </li>
+                    </li>
+                    <li><a href="#L"><i
+                    class="ri-circle-fill">
+                    </i>Lettura Del Modello </a>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main> 
+    <div class="Titoli">
+        <section id="E_A"><h1>Entita' Associazioni</h1><p>-Un'entità è una categoria di oggetti (eventi, individui, oggetti) con caratteristiche in comune.
+             Ad esempio, in un sistema di gestione di una libreria, le categorie potrebbero includere "Volume", "Scrittore" e "Cliente".
+            Un'associazione rappresenta il legame tra due o più categorie e illustra come le categorie sono connesse o interagiscono tra di loro.
+            Nello schema ER, le categorie sono rappresentate da un rettangolo con il nome della categoria al suo interno. 
+            Le associazioni sono simboleggiate tramite linee che collegano le categorie coinvolte.</p><img src="SChema1.jpg" alt=" ">
+      </section> 
+
+        <section id="A_R"><h1>Associazione Ricorsiva</h1>
+        <p>
+            Una Associazione ricorsiva è un' entità collegata a se stessa attraverso un associazione.
+            Questo significa che ogni istanza si può collegare ad altre istanze della propria entità.   
+         </p>
+         <img src="Associazioni_ricor.jpg" alt=""> 
+         </section>
+        <section id="E_A_R"><h1>Entita' Realta'</h1>
+        <p>
+           Entità e associazioni nelle realtà possono variare a seconda della situazione in cui ci troviamo.
+           Esempi di entità e associazioni  
+          
+        </p> 
+        <img src="A__E_R.jpg" alt="">
+        </section>
+        <section id="A_E"><h1>Attributi Entita'</h1>
+        <p>
+            Ogni entità pio avere diversi Attributi, ad esepio la data di nasciata a come Attributi giorni, mese e anno
+        </p>
+        <img src="schema_attributi.jpg" alt=" ">
+        </section>
+        <section id="A_E_R"><h1>Attributi Entita' Realta</h1>
+            <p>
+                Come esempio reale possiamo vedere come una persone ha come attributi nome cognome e indirizzo, indirizzo a sua volta ha tre attributi via, numero civico, cap.
+                 Nascita invece ha come attributo Data.
+                Città come attributi Abitanti 
+            </p>
+            <img src="Attributi_realt_Enti.jpg" alt="">
+        </section>
+        <section id="M"><h1>Molteplicita' di una Associazione</h1>
+            <p>
+                La molteplicità nelle associzione viene rappresenta o con dei numeri come " 1 " 
+                oppure lettere "N" ma ci sono casi che si possono usare numeri e lettere insieme.
+            </p>
+            <img src="molteplicita.jpg" alt="">
+        </section>
+        <section id="A_D"><h1>Associazioni Diverse</h1>
+            <p>
+                Le associazioni possono essere di tipo diverso
+            </p>
+            <img src="Associazioni.jpg" alt="">
+        </section>
+        <section id="E/R"><h1>Schema E/R </h1>
+            <p>
+                Come esempio: I pazienti di un reparto di chirurgia sono ricoverati in stanze singole con differenti dotazioni (telefono. televisore, aria condizionata). I pazienti vengono operati da un chirurgo. Si devono registrare anche data. ora e sala operatoria nella quale il paziente è operato. Bisogna inoltre tenere conto delle date di inizio e
+                fine del ricovero
+                Per semplicità si ipotizzi che un paziente possa essere ricoverato una sola volta nel periodo di tempo consi-derato, che durante il ricovero non cambi la stanza e che ogni stanza sia riservata a un solo paziente.
+            </p>
+            <img src="schema.jpg" alt="">
+        </section>
+        <section id="L"><h1>Lettura Del Modello</h1>
+            <p>
+                
+Per la lettura del modello 
+Per entrambi i versi di una relazione deve essere sempre possibile ricavare due frasi
+
+devono essere composte ciascuna da 6 elementi
+
+si inizia con la parola OGNI                                                                                                                                 
+
+
+si indica il nome dell'entità di partenza
+si indica l'obbligatorietà con il verbo DEVE (linea continua) o il verbo PUO' se è facoltativo (linea tratteggiata)
+si riporta il verbo della relazione
+si indica la cardinalità con 1 solo se è collegamento 1:1 oppure uno o più se è di tipo 1:N
+per ultimo si indica il nome della entità di destinazione
+            </p>
+            <img src="lettura.jpg" alt="">
+        </section>
+    </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
